@@ -50,6 +50,14 @@ int main(int argc, char* argv[]) {
 
 	outfile = fopen(quantname, "a+");
 
+	fprintf(outfile, "int ");
+	fprintf(outfile, "%s", friendlyname);
+	fprintf(outfile, "primcount = %d;\n", aparse.bonecount);
+
+	fprintf(outfile, "int ");
+	fprintf(outfile, "%s", friendlyname);
+	fprintf(outfile, "framecount = %d;\n", aparse.framecount);
+
 	fprintf(outfile, "f32 ");
 	fprintf(outfile, "%s", friendlyname);
 	fprintf(outfile, "Anim[] = {");
