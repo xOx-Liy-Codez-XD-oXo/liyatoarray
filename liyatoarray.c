@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 		printf("Try: ./liyatoarray anim.liya\n");
 		return -1;
 	}
-
+ 
 	if (argc < 2) {
 		printf("Not enough args\n");
 		printf("Try: ./liyatoarray anim.liym\n");
